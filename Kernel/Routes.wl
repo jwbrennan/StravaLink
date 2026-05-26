@@ -1,17 +1,17 @@
 BeginPackage["JosephBrennan`StravaLink`"];
 
-RetrieveStravaRoutes;
+StravaRoutes;
 StravaRouteToGPX;
 
-Begin["`Routes`Private`"];
+Begin["`Private`"];
 
-Options[RetrieveStravaRoutes] = 
+Options[StravaRoutes] = 
 {
 	"Page" -> 1, 
 	"MaxItemsPerPage" -> 30
 };
 
-RetrieveStravaRoutes[] :=
+StravaRoutes[] :=
 URLExecute[
 	HTTPRequest[
 		"https://www.strava.com/api/v3/athlete/routes",
@@ -24,7 +24,7 @@ URLExecute[
 	],
 	"RawJSON"
 ];
-RetrieveStravaRoutes[opts : OptionsPattern[RetrieveStravaRoutes]] := 
+StravaRoutes[opts : OptionsPattern[StravaRoutes]] := 
 URLExecute[
 	HTTPRequest[
 		URLBuild[
@@ -34,6 +34,19 @@ URLExecute[
 			"per_page" -> OptionValue["MaxItemsPerPage"]
 			}
 		],
+		<|
+			"Headers" ->
+			<|
+				"Authorization" -> "Bearer " <> SystemCredential["Strava-Access-Token"]
+			|>
+		|>
+	],
+	"RawJSON"
+];
+StravaRoutes[routeID_Integer] :=
+URLExecute[
+	HTTPRequest[
+		"https://www.strava.com/api/v3/routes/" <> ToString[routeID],
 		<|
 			"Headers" ->
 			<|
@@ -57,11 +70,6 @@ Import[
 	],
 	"GPX"
 ];
-$GPXImportElements = 
-{
-	"Comments", "Data", "Graphics", "GraphicsList", "LayerNames", 
-	"Metadata", "Name", "SpatialRange", "Summary", "TabularAssociation"
-};
 StravaRouteToGPX[
 	routeID_Integer, 
 	elem : (Alternatives @@ $GPXImportElements)

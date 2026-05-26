@@ -8,10 +8,12 @@ With[
 	Map[
 		Get[FileNameJoin[{kernelDir, #}]] &,
 		{
+			"Private.wl",
 			"Setup.wl", 
 			"Athlete.wl", 
 			"Activities.wl",
-			"Routes.wl"
+			"Routes.wl",
+			"Segments.wl"
 		}
 	]
 ];

@@ -1,13 +1,28 @@
 BeginPackage["JosephBrennan`StravaLink`"];
-RetrieveStravaAthleteData;
+StravaAthleteData;
+StravaAthleteStats;
 
-Begin["`Athlete`Private`"];
+Begin["`Private`"];
 
 
-RetrieveStravaAthleteData[] := 
+StravaAthleteData[] := 
 URLExecute[
 	HTTPRequest[
 		"https://www.strava.com/api/v3/athlete",
+		<|
+			"Headers" ->
+			<|
+				"Authorization" ->  "Bearer " <> SystemCredential["Strava-Access-Token"]
+			|>
+		|>
+	],
+	"RawJSON"
+];
+
+StravaAthleteStats[athleteID_Integer] := 
+URLExecute[
+	HTTPRequest[
+		"https://www.strava.com/api/v3/athletes/" <> ToString[athleteID] <> "/stats",
 		<|
 			"Headers" ->
 			<|

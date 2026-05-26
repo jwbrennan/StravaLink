@@ -4,7 +4,7 @@ AuthorizeStravaApplication;
 GenerateStravaAccessToken;
 RefreshStravaAccessToken;
 
-Begin["`Setup`Private`"];
+Begin["`Private`"];
 
 
 AuthorizeStravaApplication[redirectURI_: "http://localhost", scope_: "read_all,activity:read_all,profile:read_all"] :=
@@ -41,7 +41,6 @@ With[
 			"RawJSON"
 		]
 	},
-	Echo[response];
 	Enclose[
 		ConfirmAssert[
 			KeyExistsQ[response, "access_token"],

@@ -1,13 +1,13 @@
 BeginPackage["JosephBrennan`StravaLink`"];
 
-RetrieveStravaActivityData;
+StravaActivityData;
 
-Begin["`Activities`Private`"];
+Begin["`Private`"];
 
 
 (* To Do: Add options for pagination, max items, date before/after*)
 
-Options[RetrieveStravaActivityData] = 
+Options[StravaActivityData] = 
 {
 	"Page" -> 1, 
 	"MaxItemsPerPage" -> 30, 
@@ -16,7 +16,7 @@ Options[RetrieveStravaActivityData] =
 };
 
 (* Without options this returns the 30 most recent activities. *)
-RetrieveStravaActivityData[] := 
+StravaActivityData[] := 
 URLExecute[
 	HTTPRequest[
 		"https://www.strava.com/api/v3/athlete/activities",
@@ -29,7 +29,7 @@ URLExecute[
 	],
 	"RawJSON"
 ];
-RetrieveStravaActivityData[opts : OptionsPattern[RetrieveStravaActivityData]] := 
+StravaActivityData[opts : OptionsPattern[StravaActivityData]] := 
 With[
 	{
 		before = 
@@ -70,32 +70,8 @@ With[
 		"RawJSON"
 	]
 ];
-RetrieveStravaActivityData[
-	opts : OptionsPattern[RetrieveStravaActivityData] /; 
-	DateObjectQ[OptionValue["Before"]] || DateObjectQ[OptionValue["After"]]
-] := 
-URLExecute[
-	HTTPRequest[
-		URLBuild[
-			"https://www.strava.com/api/v3/athlete/activities",
-			{
-			"page" -> OptionValue["Page"],
-			"per_page" -> OptionValue["MaxItemsPerPage"],
-			"before" -> UnixTime[OptionValue["Before"]],
-			"after" -> UnixTime[OptionValue["After"]]
-			}
-		],
-		<|
-			"Headers" ->
-			<|
-				"Authorization" -> "Bearer " <> SystemCredential["Strava-Access-Token"]
-			|>
-		|>
-	],
-	"RawJSON"
-];
 
-RetrieveStravaActivityData[id_Integer] := 
+StravaActivityData[id_Integer] := 
 URLExecute[
 	HTTPRequest[
 		"https://www.strava.com/api/v3/activities/" <> ToString[id],
