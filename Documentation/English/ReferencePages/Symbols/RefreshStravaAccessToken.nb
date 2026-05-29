@@ -1,0 +1,331 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     12409,        323]
+NotebookOptionsPosition[      9384,        254]
+NotebookOutlinePosition[      9923,        272]
+CellTagsIndexPosition[      9880,        269]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["RefreshStravaAccessToken", "ObjectName",
+ CellID->442171467,ExpressionUUID->"8904e2bd-7771-e64e-be80-f8bbe7d5db63"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"68de5805-e1c0-c44a-bfec-156523dcd35d"],
+ Cell[BoxData[
+  RowBox[{"RefreshStravaAccessToken", "[", "]"}]], "InlineFormula",
+  ExpressionUUID->"abc11266-1b4a-2143-878b-89c202fd4b69"],
+ " \[LineSeparator]executes a request for a new access token using \
+authenticated athlete credentials"
+}], "Usage",
+ CellChangeTimes->{{3.9890579427744007`*^9, 3.9890579468278866`*^9}},
+ CellID->232088568,ExpressionUUID->"3a405cfc-04ba-5041-9827-cb33ce301aee"],
+
+Cell["\<\
+This function requires that you have set the following system credentials:\
+\>", "Notes",
+ CellChangeTimes->{{3.98905747701108*^9, 3.9890574946325283`*^9}, 
+   3.9890579543807945`*^9},
+ CellID->194007686,ExpressionUUID->"2ed91151-e7a3-d543-9377-330d56b59827"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "ModInfo",ExpressionUUID->
+     "736d8dd3-d083-ff4a-9633-73f8b0519bed"], 
+    RowBox[{"SystemCredential", "[", "\"\<Strava-Client-ID\>\"", "]"}]},
+   {Cell["      ", "ModInfo",ExpressionUUID->
+     "aba1e9a6-e9a6-c948-ae4a-5fcf94c30628"], 
+    RowBox[{"SystemCredential", "[", "\"\<Strava-Client-Secret\>\"", "]"}]},
+   {Cell["      ", "ModInfo",ExpressionUUID->
+     "ee6746d6-e164-1346-99c2-135e15c5e100"], 
+    RowBox[{"SystemCredential", "[", "\"\<Strava-Refresh-Token\>\"", "]"}]}
+  }]], "1ColumnTableMod",
+ CellChangeTimes->{{3.9890575451575375`*^9, 3.989057582034916*^9}, {
+  3.9890579724269295`*^9, 3.9890579763687897`*^9}},
+ CellID->378653224,ExpressionUUID->"96eba46e-8582-6b44-89f0-ad563a0fee4b"],
+
+Cell["\<\
+The function, when called with the correct credentials, automatically updates \
+the value of:\
+\>", "Notes",
+ CellChangeTimes->{{3.98905762361977*^9, 3.9890576547912827`*^9}, {
+  3.9890581815346413`*^9, 3.9890581822877445`*^9}},
+ CellID->76990207,ExpressionUUID->"ae8af536-b29b-0b4e-83d0-1c434df0fdd6"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "ModInfo",ExpressionUUID->
+     "c26084f3-2be4-024e-b151-5703e58956ef"], 
+    RowBox[{"SystemCredential", "[", "\"\<Strava-Access-Token\>\"", "]"}]}
+  }]], "1ColumnTableMod",
+ CellChangeTimes->{{3.9890576615528812`*^9, 3.989057678281193*^9}},
+ CellID->34795858,ExpressionUUID->"cd0cd16e-b184-db4e-bc73-fe675685edfd"],
+
+Cell["Access tokens expire six hours after they are created.", "Notes",
+ CellChangeTimes->{{3.9890577794755917`*^9, 3.9890577807705917`*^9}},
+ CellID->478962925,ExpressionUUID->"c0c86a91-fd8c-3b43-938a-d98577460649"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "723bb53c-ab27-e44b-878f-5ff625d92694"]
+}], "SeeAlsoSection",
+ CellID->86793645,ExpressionUUID->"cc5b4eeb-b07a-7d46-8088-259e262cf0f4"],
+
+Cell[TextData[{
+ Cell[BoxData["AuthorizeStravaApplication"], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "15c2d3aa-f638-4940-a9d5-9b0e15f384ac"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData["GenerateStravaAccessToken"], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"ca77ec90-2081-45ae-a6ea-4010f0afe1c9",ExpressionUUID->
+  "aca8a59f-acf8-3848-be63-b192d68a1395"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "f0b2a7f9-ad85-af45-9cef-bf5455e19467"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "0abe2489-044d-b940-882d-9db9e9ecb2c0", 
+     "99bef69d-5689-f247-922a-c4cb1e5a9f56"], $CellContext`cellobj$$ = 
+    CellObject[
+    "50760769-3de4-b44c-92bf-e75e67c1f777", 
+     "bfb85b1f-d3cc-d94e-a597-aa28d7e546bc"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "50760769-3de4-b44c-92bf-e75e67c1f777"]
+}], "SeeAlso",
+ CellChangeTimes->{{3.989058092110546*^9, 3.98905811917992*^9}},
+ CellID->22765141,ExpressionUUID->"1171ac2d-5349-634b-8f31-79ab4183a4e4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->586338051,ExpressionUUID->"c3dc86de-6c23-4146-8514-a1a75692da4a"],
+
+Cell[TextData[ButtonBox["StravaLink",
+ BaseStyle->"Link",
+ ButtonData->"paclet:JosephBrennan/StravaLink/guide/StravaLink"]], "MoreAbout",
+ CellChangeTimes->{{3.9890581284411488`*^9, 3.989058138257122*^9}},
+ CellID->207700114,ExpressionUUID->"55ee29b8-9889-7542-88d9-b969d4535bf3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "fb772121-6e73-6d43-9bc3-7532ea976136"]
+}], "RelatedLinksSection",
+ CellID->317846709,ExpressionUUID->"e38d3dfa-335a-f149-81a4-c6852198b4b6"],
+
+Cell[TextData[ButtonBox["Strava Docs - Authentication",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["https://developers.strava.com/docs/authentication/"], None},
+ ButtonNote->
+  "https://developers.strava.com/docs/authentication/"]], "RelatedLinks",
+ CellChangeTimes->{{3.9890567295862427`*^9, 3.9890567727649975`*^9}, {
+  3.989058033530094*^9, 3.9890580638045635`*^9}},
+ CellID->180498491,ExpressionUUID->"f2fe619c-878e-3e4d-99e6-50d94c464764"],
+
+Cell[TextData[ButtonBox["My Strava API Application",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["https://www.strava.com/settings/api"], None},
+ ButtonNote->"https://www.strava.com/settings/api"]], "RelatedLinks",
+ CellChangeTimes->{{3.9890567295862427`*^9, 3.9890567727649975`*^9}, {
+  3.989058033530094*^9, 3.989058080477255*^9}},
+ CellID->378172727,ExpressionUUID->"df81f3dd-29ea-3f46-a70d-b12b3ed5bda4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "6bb22df9-5478-3646-a172-d47316077f27"]
+}], "ExamplesInitializationSection",
+ CellID->7916517,ExpressionUUID->"a6790aa8-a81d-854c-a330-f7202a2f722c"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<JosephBrennan`StravaLink`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->23960690,ExpressionUUID->"f29bbf00-d676-ab4f-ba8f-a3e4355b2fa7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->245103180,ExpressionUUID->"e6178a99-10dc-5b43-b8ad-de5b7872f4c5"],
+
+Cell["When your access token expires, run the following command:", \
+"ExampleText",
+ CellChangeTimes->{{3.9890581984896507`*^9, 3.989058207465391*^9}},
+ CellID->481094803,ExpressionUUID->"c6a3356b-6085-694e-836f-02efa11678f0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RefreshStravaAccessToken", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.9890582096924706`*^9, 3.9890582162541466`*^9}},
+ CellLabel->"In[1]:=",
+ CellID->113403965,ExpressionUUID->"77e442b5-9cf3-c441-a46f-f45228466a81"],
+
+Cell[BoxData["\<\"SystemCredential[\\\"Strava-Access-Token\\\"] has been \
+updated!\"\>"], "Output",
+ CellChangeTimes->{3.989058216857668*^9},
+ CellLabel->"Out[1]=",
+ CellID->851953258,ExpressionUUID->"8fc60b80-6127-e246-8a73-8c35616b30a7"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 645.6},
+WindowMargins->{{-4.8, Automatic}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "JosephBrennan/StravaLink"|>,
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"0abe2489-044d-b940-882d-9db9e9ecb2c0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 121, 1, 72, "ObjectName",ExpressionUUID->"8904e2bd-7771-e64e-be80-f8bbe7d5db63",
+ CellID->442171467],
+Cell[700, 25, 499, 9, 76, "Usage",ExpressionUUID->"3a405cfc-04ba-5041-9827-cb33ce301aee",
+ CellID->232088568],
+Cell[1202, 36, 269, 5, 26, "Notes",ExpressionUUID->"2ed91151-e7a3-d543-9377-330d56b59827",
+ CellID->194007686],
+Cell[1474, 43, 749, 13, 55, "1ColumnTableMod",ExpressionUUID->"96eba46e-8582-6b44-89f0-ad563a0fee4b",
+ CellID->378653224],
+Cell[2226, 58, 312, 6, 26, "Notes",ExpressionUUID->"ae8af536-b29b-0b4e-83d0-1c434df0fdd6",
+ CellID->76990207],
+Cell[2541, 66, 358, 6, 20, "1ColumnTableMod",ExpressionUUID->"cd0cd16e-b184-db4e-bc73-fe675685edfd",
+ CellID->34795858],
+Cell[2902, 74, 216, 2, 26, "Notes",ExpressionUUID->"c0c86a91-fd8c-3b43-938a-d98577460649",
+ CellID->478962925]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3155, 81, 457, 13, 38, "SeeAlsoSection",ExpressionUUID->"cc5b4eeb-b07a-7d46-8088-259e262cf0f4",
+ CellID->86793645],
+Cell[3615, 96, 1964, 45, 21, "SeeAlso",ExpressionUUID->"1171ac2d-5349-634b-8f31-79ab4183a4e4",
+ CellID->22765141]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5616, 146, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"c3dc86de-6c23-4146-8514-a1a75692da4a",
+ CellID->586338051],
+Cell[5736, 149, 280, 4, 17, "MoreAbout",ExpressionUUID->"55ee29b8-9889-7542-88d9-b969d4535bf3",
+ CellID->207700114]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6053, 158, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"e38d3dfa-335a-f149-81a4-c6852198b4b6",
+ CellID->317846709],
+Cell[6528, 173, 448, 8, 17, "RelatedLinks",ExpressionUUID->"f2fe619c-878e-3e4d-99e6-50d94c464764",
+ CellID->180498491],
+Cell[6979, 183, 410, 7, 17, "RelatedLinks",ExpressionUUID->"df81f3dd-29ea-3f46-a70d-b12b3ed5bda4",
+ CellID->378172727]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7426, 195, 528, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"a6790aa8-a81d-854c-a330-f7202a2f722c",
+ CellID->7916517],
+Cell[7957, 211, 183, 3, 45, "ExampleInitialization",ExpressionUUID->"f29bbf00-d676-ab4f-ba8f-a3e4355b2fa7",
+ CellID->23960690]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8177, 219, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"e6178a99-10dc-5b43-b8ad-de5b7872f4c5",
+ CellID->245103180],
+Cell[8622, 233, 226, 3, 23, "ExampleText",ExpressionUUID->"c6a3356b-6085-694e-836f-02efa11678f0",
+ CellID->481094803],
+Cell[CellGroupData[{
+Cell[8873, 240, 240, 4, 25, "Input",ExpressionUUID->"77e442b5-9cf3-c441-a46f-f45228466a81",
+ CellID->113403965],
+Cell[9116, 246, 240, 4, 24, "Output",ExpressionUUID->"8fc60b80-6127-e246-8a73-8c35616b30a7",
+ CellID->851953258]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
