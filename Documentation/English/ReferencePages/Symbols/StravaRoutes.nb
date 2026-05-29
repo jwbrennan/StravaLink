@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    203695,       3868]
-NotebookOptionsPosition[    199733,       3775]
-NotebookOutlinePosition[    200522,       3800]
-CellTagsIndexPosition[    200441,       3795]
+NotebookDataLength[    203804,       3870]
+NotebookOptionsPosition[    199861,       3777]
+NotebookOutlinePosition[    200631,       3802]
+CellTagsIndexPosition[    200550,       3797]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -98,10 +98,10 @@ Cell[TextData[{
     "ec8be1b1-7719-9a4d-b021-4f1c8aecb13c"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
     "3ce085c5-f4e5-474e-a29f-2487e0ae9aa0", 
-     "662e0a9e-e09f-4d4f-abc9-3dbfbd9d2c3d"], $CellContext`cellobj$$ = 
+     "a345ac46-e9b2-8f4d-8712-684aac167eff"], $CellContext`cellobj$$ = 
     CellObject[
     "c6d86014-ccd2-ff4e-98c2-d3290d9a8b83", 
-     "01b09b53-ed83-3144-bd21-40573b32d970"]}, 
+     "8df3a077-e29c-3844-82a3-a18cf734cc7e"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -135,8 +135,10 @@ Cell[CellGroupData[{
 Cell["Related Guides", "MoreAboutSection",
  CellID->334623724,ExpressionUUID->"64ae5b35-269a-434a-b4c2-e6f193328230"],
 
-Cell["StravaLink", "MoreAbout",
- CellChangeTimes->{3.988995732833111*^9},
+Cell[TextData[ButtonBox["StravaLink",
+ BaseStyle->"Link",
+ ButtonData->"paclet:JosephBrennan/StravaLink/guide/StravaLink"]], "MoreAbout",
+ CellChangeTimes->{3.988995732833111*^9, 3.9890568867601566`*^9},
  CellID->75566228,ExpressionUUID->"7f71017e-f0e0-1e4b-ac3c-32705bae9f61"]
 }, Open  ]],
 
@@ -1771,7 +1773,7 @@ EEA7BK6C63OVQAZIAB3V7GQQY=",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[True, 17, 1], {1, 17 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -1821,7 +1823,7 @@ EEA7BK6C63OVQAZIAB3V7GQQY=",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ + (-10) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$hPos$$ - 10 
                     If[False, 17, 1], {1, 17 - -10 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -2314,14 +2316,14 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
       ImageSizeCache->{
-       1527.699960231781, {84.24641503906251, 89.53743066406251}},
+       1527.6999816894531`, {84.24641503906251, 89.53743066406251}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
      ImageSizeCache->{
-      1527.699960231781, {84.24641503906251, 89.53743066406251}}],
+      1527.6999816894531`, {84.24641503906251, 89.53743066406251}}],
     BaseStyle->{
      LineBreakWithin -> False, 
       LightDarkAutoColorRules -> <|"MarkedColors" -> True|>},
@@ -3706,14 +3708,14 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
       ImageSizeCache->{
-       4866.695908542683, {263.8344921875001, 269.1255078125001}},
+       4866.696005688732, {263.8344921875001, 269.1255078125001}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
      ImageSizeCache->{
-      4866.695908542683, {263.8344921875001, 269.1255078125001}}],
+      4866.696005688732, {263.8344921875001, 269.1255078125001}}],
     BaseStyle->{
      LineBreakWithin -> False, 
       LightDarkAutoColorRules -> <|"MarkedColors" -> True|>},
@@ -3773,8 +3775,8 @@ Cell[TextData[{
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{574.8, 645.6},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+WindowSize->{574.8, 640.8},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 TaggingRules-><|"Paclet" -> "JosephBrennan/StravaLink"|>,
 FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
@@ -3787,14 +3789,14 @@ ExpressionUUID->"3ce085c5-f4e5-474e-a29f-2487e0ae9aa0"
 (*CellTagsOutline
 CellTagsIndex->{
  "ExtendedExamples"->{
-  Cell[198523, 3738, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"1c556fc8-ef22-ce4e-bf0d-12affa0454d2",
+  Cell[198651, 3740, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"1c556fc8-ef22-ce4e-bf0d-12affa0454d2",
    CellTags->"ExtendedExamples",
    CellID->38100032]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 200246, 3788}
+ {"ExtendedExamples", 200355, 3790}
  }
 *)
 (*NotebookFileOutline
@@ -3820,53 +3822,53 @@ Cell[3164, 89, 1676, 40, 21, "SeeAlso",ExpressionUUID->"74e483b3-0e57-024b-8e7c-
 Cell[CellGroupData[{
 Cell[4877, 134, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"64ae5b35-269a-434a-b4c2-e6f193328230",
  CellID->334623724],
-Cell[4997, 137, 147, 2, 17, "MoreAbout",ExpressionUUID->"7f71017e-f0e0-1e4b-ac3c-32705bae9f61",
+Cell[4997, 137, 277, 4, 17, "MoreAbout",ExpressionUUID->"7f71017e-f0e0-1e4b-ac3c-32705bae9f61",
  CellID->75566228]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5181, 144, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"42267401-5018-674f-a2a5-a08f418ad681",
+Cell[5311, 146, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"42267401-5018-674f-a2a5-a08f418ad681",
  CellID->258183004],
-Cell[5656, 159, 478, 9, 17, "RelatedLinks",ExpressionUUID->"22a51407-0f3a-5341-a547-009114b43ff7",
+Cell[5786, 161, 478, 9, 17, "RelatedLinks",ExpressionUUID->"22a51407-0f3a-5341-a547-009114b43ff7",
  CellID->430156066]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6171, 173, 529, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"6cd1e614-f316-4749-b278-119eeb1c81bf",
+Cell[6301, 175, 529, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"6cd1e614-f316-4749-b278-119eeb1c81bf",
  CellID->13126807],
-Cell[6703, 189, 183, 3, 45, "ExampleInitialization",ExpressionUUID->"ba451423-1b18-3b41-8e9f-25aab732702a",
+Cell[6833, 191, 183, 3, 45, "ExampleInitialization",ExpressionUUID->"ba451423-1b18-3b41-8e9f-25aab732702a",
  CellID->18565134]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6923, 197, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"0b1311e1-f4da-6540-99ce-b9e3bf0bd28d",
+Cell[7053, 199, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"0b1311e1-f4da-6540-99ce-b9e3bf0bd28d",
  CellID->104511177],
-Cell[7368, 211, 230, 3, 23, "ExampleText",ExpressionUUID->"4d44d7ce-b438-3744-80a5-7e62adfb50e2",
+Cell[7498, 213, 230, 3, 23, "ExampleText",ExpressionUUID->"4d44d7ce-b438-3744-80a5-7e62adfb50e2",
  CellID->647390101],
 Cell[CellGroupData[{
-Cell[7623, 218, 714, 18, 42, "Input",ExpressionUUID->"6841aa39-0efb-e643-b5ea-fae3204dd653",
+Cell[7753, 220, 714, 18, 42, "Input",ExpressionUUID->"6841aa39-0efb-e643-b5ea-fae3204dd653",
  CellID->255817613],
-Cell[8340, 238, 115522, 2103, 183, "Output",ExpressionUUID->"9d96289a-a187-c244-b475-3820c7f8e264",
+Cell[8470, 240, 115520, 2103, 183, "Output",ExpressionUUID->"9d96289a-a187-c244-b475-3820c7f8e264",
  CellID->147184015]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[123899, 2346, 241, 5, 16, "ExampleDelimiter",ExpressionUUID->"2e4f7cdd-b22a-8440-82ef-e18e4352c0bc",
+Cell[124027, 2348, 241, 5, 16, "ExampleDelimiter",ExpressionUUID->"2e4f7cdd-b22a-8440-82ef-e18e4352c0bc",
  CellID->95883443],
-Cell[124143, 2353, 205, 2, 23, "ExampleText",ExpressionUUID->"3e30a424-feea-7e44-9b23-68cf04008d2a",
+Cell[124271, 2355, 205, 2, 23, "ExampleText",ExpressionUUID->"3e30a424-feea-7e44-9b23-68cf04008d2a",
  CellID->340625976],
 Cell[CellGroupData[{
-Cell[124373, 2359, 282, 5, 25, "Input",ExpressionUUID->"0e4d361c-fe1d-d941-8cb3-85a340d95e12",
+Cell[124501, 2361, 282, 5, 25, "Input",ExpressionUUID->"0e4d361c-fe1d-d941-8cb3-85a340d95e12",
  CellID->49715380],
-Cell[124658, 2366, 73804, 1365, 542, "Output",ExpressionUUID->"a4900b04-d71c-034a-b6d6-485e9da32f10",
+Cell[124786, 2368, 73804, 1365, 542, "Output",ExpressionUUID->"a4900b04-d71c-034a-b6d6-485e9da32f10",
  CellID->43571532]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[198523, 3738, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"1c556fc8-ef22-ce4e-bf0d-12affa0454d2",
+Cell[198651, 3740, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"1c556fc8-ef22-ce4e-bf0d-12affa0454d2",
  CellTags->"ExtendedExamples",
  CellID->38100032],
 Cell[CellGroupData[{
-Cell[199034, 3755, 243, 5, 32, "ExampleSection",ExpressionUUID->"c685ebd8-b8e3-434c-a6d7-c34ba2a14bad",
+Cell[199162, 3757, 243, 5, 32, "ExampleSection",ExpressionUUID->"c685ebd8-b8e3-434c-a6d7-c34ba2a14bad",
  CellID->206037013],
-Cell[199280, 3762, 425, 9, 39, "ExampleText",ExpressionUUID->"ddd1f204-2149-b743-8d22-8c1a6b4dbfe5",
+Cell[199408, 3764, 425, 9, 39, "ExampleText",ExpressionUUID->"ddd1f204-2149-b743-8d22-8c1a6b4dbfe5",
  CellID->489713202]
 }, Open  ]]
 }, Open  ]]
