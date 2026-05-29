@@ -23,7 +23,8 @@ URLExecute[
 Options[StravaSegmentEfforts] = 
 {
 	"StartDate" -> Automatic, 
-	"EndDate" -> Automatic
+	"EndDate" -> Automatic,
+	"MaxItems" -> 30
 };
 StravaSegmentEfforts[segmentID_Integer, opts : OptionsPattern[StravaSegmentEfforts]] :=
 With[
@@ -51,7 +52,8 @@ With[
 				"https://www.strava.com/api/v3/segment_efforts/?segment_id=" <> ToString[segmentID],
 				{
 					"start_date_local" -> startDate,
-					"end_date_local" -> endDate
+					"end_date_local" -> endDate,
+					"per_page" -> OptionValue["MaxItems"]
 				}
 			],
 			<|
