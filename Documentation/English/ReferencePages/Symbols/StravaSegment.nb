@@ -1,0 +1,2958 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    131063,       2950]
+NotebookOptionsPosition[    127622,       2867]
+NotebookOutlinePosition[    128411,       2892]
+CellTagsIndexPosition[    128330,       2887]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["StravaSegment", "ObjectName",
+ CellID->82277495,ExpressionUUID->"93460474-9724-df43-a07b-dd186e49251c"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"36d8fc88-b945-2e48-b489-62653e6507ea"],
+ Cell[BoxData[
+  RowBox[{"StravaSegment", "[", 
+   StyleBox["id", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+  "8e41d10c-278a-b049-a846-6b96bb63f7dc"],
+ " \[LineSeparator]returns data on a Strava segment identified by ",
+ StyleBox["id", "TI"]
+}], "Usage",
+ CellChangeTimes->{{3.98899735783461*^9, 3.988997406075596*^9}},
+ CellID->635704156,ExpressionUUID->"74813d11-2a0e-874c-aefd-8c5d15940b72"],
+
+Cell["The data returned is known as a DetailedSegment object.", "Notes",
+ CellChangeTimes->{{3.988997420514841*^9, 3.9889974468742447`*^9}},
+ CellID->126235661,ExpressionUUID->"d1806785-5cc3-274f-b291-674f028c670f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "fcb60d1c-3b4c-e744-acf8-a5bf348f1ec0"]
+}], "SeeAlsoSection",
+ CellID->44651223,ExpressionUUID->"543cbc9f-62de-e24f-b4ab-ec5e39513f14"],
+
+Cell[TextData[{
+ Cell[BoxData["StravaSegmentEfforts"], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "68c06a57-ad24-754e-81b8-53df1edf4db4"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData["StravaRoutes"], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},
+  CellTags->"b887f8b6-350c-48a3-91aa-04cc6c2e2173",ExpressionUUID->
+  "9f4f633b-ba5c-0249-9c95-bdddd9315106"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "21d92de5-ee08-4b4f-9e11-3437eb53eef5"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "4cf94821-f759-fa46-ab9f-5c41566d2cec", 
+     "436b3140-adb2-874a-b03f-4ecdcc5fb659"], $CellContext`cellobj$$ = 
+    CellObject[
+    "849db588-f036-214e-ab66-4c60ee6e395e", 
+     "143460b5-b1fa-f44a-ae19-1d00c599786c"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "849db588-f036-214e-ab66-4c60ee6e395e"]
+}], "SeeAlso",
+ CellChangeTimes->{{3.98899751231604*^9, 3.988997522541481*^9}},
+ CellID->38815242,ExpressionUUID->"65a9ecd1-0c8b-634a-b7b2-bd38dddcbe60"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->368081560,ExpressionUUID->"7e00ac98-2d68-6a4a-a407-bdfdfd996d74"],
+
+Cell["StravaLink", "MoreAbout",
+ CellChangeTimes->{{3.988997530051853*^9, 3.988997534243002*^9}},
+ CellID->57355534,ExpressionUUID->"d6834dc4-767d-1546-8fda-df7d7263ba24"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "7d6503db-b859-244b-9b30-25f57c5284bd"]
+}], "RelatedLinksSection",
+ CellID->839174385,ExpressionUUID->"f4fac376-1fe1-4149-8a24-6ba9b868b3bc"],
+
+Cell[TextData[ButtonBox["Strava API and SDK Reference (getSegmentById)",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["https://developers.strava.com/docs/reference/#api-Segments-\
+getSegmentById"], None},
+ ButtonNote->
+  "https://developers.strava.com/docs/reference/#api-Segments-getSegmentById"]\
+], "RelatedLinks",
+ CellChangeTimes->{
+  3.988993927237751*^9, {3.9889940209274464`*^9, 3.9889940589054623`*^9}, {
+   3.988994770635599*^9, 3.9889947819597454`*^9}, {3.9889975475550823`*^9, 
+   3.988997567364044*^9}},
+ CellID->480661155,ExpressionUUID->"10136224-b38f-c045-b92f-a1bdad4d4fc4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "5bc72275-5fc3-1046-8c22-4a378fe70a85"]
+}], "ExamplesInitializationSection",
+ CellID->3295126,ExpressionUUID->"ab874fc1-3063-004e-abe3-da11fdf0b32c"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<JosephBrennan`StravaLink`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->302627474,ExpressionUUID->"0f9d35e6-9189-7c4e-9cfa-596d23bc1723"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->416200089,ExpressionUUID->"4c6faeaa-c5e8-7740-ac5e-bc6dae8d8de7"],
+
+Cell["Find detailed information about a specific Strava segment:", \
+"ExampleText",
+ CellChangeTimes->{3.988997598331114*^9},
+ CellID->48617538,ExpressionUUID->"1843bd27-55ed-1747-bc30-a2a8285aa1ad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"data", "=", 
+     RowBox[{"StravaSegment", "[", "2320922", "]"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Dataset", "[", "\[IndentingNewLine]", 
+    RowBox[{"KeyTake", "[", "\[IndentingNewLine]", 
+     RowBox[{"data", ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<name\>\"", ",", "\"\<activity_type\>\"", 
+        ",", "\"\<distance\>\"", ",", "\"\<maximum_grade\>\"", 
+        ",", "\"\<elevation_high\>\"", ",", "\"\<elevation_low\>\"", 
+        ",", "\"\<elevation_profile\>\"", ",", "\"\<city\>\"", 
+        ",", "\"\<state\>\"", ",", "\"\<country\>\"", ",", ",", 
+        ",", "\"\<starred\>\"", ",", "\"\<total_elevation_gain\>\"", 
+        ",", "\"\<effort_count\>\"", ",", "\"\<athlete_count\>\"", 
+        ",", "\"\<star_count\>\"", ",", "\"\<xoms\>\"", 
+        ",", "\"\<local_legend\>\""}], "}"}]}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.988997676007328*^9, 3.9889978319666862`*^9}},
+ CellLabel->"In[5]:=",
+ CellID->26346633,ExpressionUUID->"2a0dbddd-4bfd-154e-bbe8-4841dcd9c22f"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> <|
+      "name" -> "Broadoak", "activity_type" -> "Ride", "distance" -> 600.688, 
+       "maximum_grade" -> 16.1, "elevation_high" -> 70.8, "elevation_low" -> 
+       28., "elevation_profile" -> 
+       "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/\
+LDB7R6HSNXTWG4XWZP2J5DKDPA3D5I7JY6Y4ZOFQZW46LHEKK6K4H67UB6ESTBBN4U3UPWX4MJYLQH\
+IBISTR7PNP", "city" -> "Ravenglass", "state" -> "Cumbria", "country" -> 
+       "United Kingdom", "starred" -> True, "total_elevation_gain" -> 42.7623,
+        "effort_count" -> 11510, "athlete_count" -> 1391, "star_count" -> 6, 
+       "xoms" -> <|
+        "kom" -> "1:18", "qom" -> "2:04", "overall" -> "1:18", 
+         "destination" -> <|
+          "href" -> "strava://segments/2320922/leaderboard", "type" -> 
+           "overall", "name" -> "All-Time"|>|>, 
+       "local_legend" -> <|
+        "athlete_id" -> 3100781, "title" -> "keith harrison", "profile" -> 
+         "https://dgalywyr863hv.cloudfront.net/pictures/athletes/3100781/\
+3637550/3/large.jpg", "effort_description" -> 
+         "29 efforts in the last 90 days", "effort_count" -> "29", 
+         "effort_counts" -> <|
+          "overall" -> "29 efforts", "female" -> "6 efforts"|>, "destination" -> 
+         "strava://segments/2320922/local_legend?categories%5B%5D=overall"|>|>\
+, "AllowEmbedding" -> True, "InitialShape" -> TypeSystem`PackageScope`Limited[
+       TypeSystem`PackageScope`ColumnShape[
+        TypeSystem`PackageScope`KeyValueShape[
+         TypeSystem`PackageScope`AtomShape[145.60000000000002`], 
+         TypeSystem`PackageScope`UnknownShape[False]]], 17, 
+       DirectedInfinity[1], {}], "InitialType" -> TypeSystem`Assoc[
+       TypeSystem`Atom[String], TypeSystem`AnyType, 17], "Meta" -> <||>, 
+     "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
+     TypeSystem`PackageScope`Limited[
+       TypeSystem`PackageScope`ColumnShape[
+        TypeSystem`PackageScope`KeyValueShape[
+         TypeSystem`PackageScope`AtomShape[145.60000000000002`], 
+         TypeSystem`PackageScope`UnknownShape[False]]], 17, 
+       DirectedInfinity[1], {}], "Type" -> TypeSystem`Assoc[
+       TypeSystem`Atom[String], TypeSystem`AnyType, 17], "Path" -> {}, 
+     "DisplayedRowCount" -> 17, "DisplayedColumnCount" -> 1, "DataRowCount" -> 
+     17, "DataColumnCount" -> 1, "SortPaths" -> {}, "SortDirections" -> {}, 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
+    TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+    DynamicModule[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+        Style[
+         Grid[{{
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["name", 
+                  Style[
+                  "name", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["name"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["name"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation["Broadoak", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["name"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{89.60000000000001, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["activity_type", 
+                  Style[
+                  "activity_type", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["activity_type"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["activity_type"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation["Ride", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["activity_type"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{44.800000000000004`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["distance", 
+                  Style[
+                  "distance", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["distance"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["distance"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["600.688"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["distance"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["maximum_grade", 
+                  Style[
+                  "maximum_grade", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["maximum_grade"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["maximum_grade"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["16.1"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["maximum_grade"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["elevation_high", 
+                  Style[
+                  "elevation_high", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["elevation_high"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_high"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["70.8"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_high"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["elevation_low", 
+                  Style[
+                  "elevation_low", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["elevation_low"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_low"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["28.0"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_low"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["elevation_profile", 
+                  Style[
+                  "elevation_profile", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["elevation_profile"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_profile"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+              "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/\
+LDB7R6HSNXTWG4XWZP2J5DKDPA3D5I7JY6Y4ZOFQZW46LHEKK6K4H67UB6ESTBBN4U3UPWX4MJYLQH\
+IBISTR7PNP", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["elevation_profile"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{1523.2, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["city", 
+                  Style[
+                  "city", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["city"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["city"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation["Ravenglass", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["city"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{112.00000000000001`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["state", 
+                  Style[
+                  "state", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["state"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["state"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation["Cumbria", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["state"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["country", 
+                  Style[
+                  "country", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["country"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["country"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation["United Kingdom", 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["country"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{156.8, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["starred", 
+                  Style[
+                  "starred", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["starred"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["starred"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["True"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["starred"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["total_elevation_gain", 
+                  Style[
+                  "total_elevation_gain", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["total_elevation_gain"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["total_elevation_gain"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["42.7623"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["total_elevation_gain"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{60, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["effort_count", 
+                  Style[
+                  "effort_count", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["effort_count"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["effort_count"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["11510"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["effort_count"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["athlete_count", 
+                  Style[
+                  "athlete_count", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["athlete_count"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["athlete_count"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["1391"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["athlete_count"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["star_count", 
+                  Style[
+                  "star_count", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["star_count"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["star_count"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes["6"], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["star_count"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{34, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["xoms", 
+                  Style[
+                  "xoms", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["xoms"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["xoms"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  
+                  Style[<|"kom" -> "1:18", "qom" -> "2:04", "overall" -> 
+                    "1:18", 
+                    "destination" -> <|
+                    "href" -> "strava://segments/2320922/leaderboard", "type" -> 
+                    "overall", "name" -> "All-Time"|>|>, ShowStringCharacters -> 
+                   False], 
+                  Style[
+                   
+                   Style[<|"kom" -> "1:18", "qom" -> "2:04", "overall" -> 
+                    "1:18", 
+                    "destination" -> <|
+                    "href" -> "strava://segments/2320922/leaderboard", "type" -> 
+                    "overall", "name" -> "All-Time"|>|>, ShowStringCharacters -> 
+                    False], FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["xoms"]}, 4]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["xoms"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}]]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["local_legend", 
+                  Style[
+                  "local_legend", FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["local_legend"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["local_legend"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{145.60000000000002`, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  
+                  Style[<|"athlete_id" -> 3100781, "title" -> 
+                    "keith harrison", "profile" -> 
+                    "https://dgalywyr863hv.cloudfront.net/pictures/athletes/\
+3100781/3637550/3/large.jpg", "effort_description" -> 
+                    "29 efforts in the last 90 days", "effort_count" -> "29", 
+                    "effort_counts" -> <|
+                    "overall" -> "29 efforts", "female" -> "6 efforts"|>, 
+                    "destination" -> 
+                    "strava://segments/2320922/local_legend?categories%5B%5D=\
+overall"|>, ShowStringCharacters -> False], 
+                  Style[
+                   
+                   Style[<|"athlete_id" -> 3100781, "title" -> 
+                    "keith harrison", "profile" -> 
+                    "https://dgalywyr863hv.cloudfront.net/pictures/athletes/\
+3100781/3637550/3/large.jpg", "effort_description" -> 
+                    "29 efforts in the last 90 days", "effort_count" -> "29", 
+                    "effort_counts" -> <|
+                    "overall" -> "29 efforts", "female" -> "6 efforts"|>, 
+                    "destination" -> 
+                    "strava://segments/2320922/local_legend?categories%5B%5D=\
+overall"|>, ShowStringCharacters -> False], FontColor -> 
+                   RGBColor[
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["local_legend"]}, 4]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["local_legend"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}]]}}, 
+          BaseStyle -> {
+           ContextMenu -> 
+            Dynamic[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+              Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu, True, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger = 
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                 Block[{TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = \
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                   
+                   With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+            "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
+          All, FrameStyle -> 
+          RGBColor[0.749003690406716, 0.749003690406716, 0.749003690406716], 
+          Spacings -> {0, 0}, Alignment -> Left, 
+          BaseStyle -> {
+           FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+            Plain}], LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+         False, ShowAutoStyles -> False]], 
+      TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+     Dynamic[
+      TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+         Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+         Module[{
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+           TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+           TypeSystem`NestedGrid`PackagePrivate`datasetData[
+            TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+             TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+             TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+             TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+            Not[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+            TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+            TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+       TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+         FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+         TypeSystem`SparseGrid[
+          TypeSystem`H["(data no longer present)"]], 
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+     DynamicModuleValues :> {}], 
+    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+     TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+      TypeSystem`PackageScope`SubViewPathbar[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+       TypeSystem`NestedGrid`PackagePrivate`updateState[
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+        TypeSystem`NestedGrid`PackagePrivate`localHold[
+        TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+     TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Dynamic[
+     Replace[
+      Replace[
+      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+       TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+          Blank[]] -> "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+          Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+           Blank[]], 
+          Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+           Blank[]], 
+          Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+           Blank[]]] :> (
+         Increment[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+         TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+          TypeSystem`NestedGrid`PackagePrivate`path$; 
+         TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+          TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+         TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+          TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+         TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+         TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+          TypeSystem`NestedGrid`PackagePrivate`path$, 
+           TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+        Spacer[10], Blank[] :> Spacer[10]}], 
+      Pattern[TypeSystem`NestedGrid`PackagePrivate`bar, 
+        Except[
+         Alternatives[
+          Blank[Spacer], ""]]] :> 
+      TypeSystem`NestedGrid`PackagePrivate`makeFramedPathbar[
+       TypeSystem`NestedGrid`PackagePrivate`bar]], 
+     TrackedSymbols :> {
+      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+    DynamicWrapperBox[
+     DynamicBox[ToBoxes[
+       Dataset`DatasetContent[
+       2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+        "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], "State" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], "VPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], "HPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], "TopBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], "BottomBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+        Hold[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
+      ImageSizeCache->{
+       2252.112069539223, {223.93749218750008`, 229.22850781250008`}},
+      TrackedSymbols:>{
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+     MouseAnnotation[],
+     ImageSizeCache->{
+      2252.112069539223, {223.93749218750008`, 229.22850781250008`}}],
+    BaseStyle->{
+     LineBreakWithin -> False, 
+      LightDarkAutoColorRules -> <|"MarkedColors" -> True|>},
+    DynamicModuleValues:>{},
+    Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+     CreateUUID[]),
+    UnsavedVariables:>{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Dataset`InterpretDataset[1],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.9889976053500996`*^9, {3.988997796021717*^9, 3.9889978023815575`*^9}, 
+   3.988997833701166*^9},
+ CellLabel->"Out[5]=",
+ CellID->499919105,ExpressionUUID->"52a2a375-d9c4-b242-9110-eaa175622519"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "51eac623-ca19-784c-bfba-4a3163d66641"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->747651649,ExpressionUUID->"f7295c79-058e-1441-ad76-23ff031f4c63"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "a0d91ca1-78c0-c246-9434-05e62b55ba8d"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->9863980,ExpressionUUID->"d42d6c92-2175-9642-a638-e389225d23d8"],
+
+Cell[TextData[{
+ "Visualize the segment using ",
+ ButtonBox["GooglePolylineDecode",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://resources.wolframcloud.com/FunctionRepository/resources/\
+GooglePolylineDecode"], None},
+  ButtonNote->
+   "https://resources.wolframcloud.com/FunctionRepository/resources/\
+GooglePolylineDecode"],
+ ":"
+}], "ExampleText",
+ CellChangeTimes->{3.98899789743095*^9},
+ CellID->14714245,ExpressionUUID->"82ebacbb-e129-524d-9978-35b9748160a3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"segment", "=", 
+     RowBox[{"StravaSegment", "[", "2320922", "]"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"coords", "=", 
+     RowBox[{
+      RowBox[{"ResourceFunction", "[", "\"\<GooglePolylineDecode\>\"", "]"}], 
+      "[", 
+      RowBox[{"segment", "[", 
+       RowBox[{"\"\<map\>\"", ",", "\"\<polyline\>\""}], "]"}], "]"}]}], 
+    "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"GeoListPlot", "[", 
+    RowBox[{"coords", ",", 
+     RowBox[{"Joined", "->", "True"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->452440787,ExpressionUUID->"60b0f6a6-6e39-8744-93f2-83632886708f"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   TagBox[{
+     TagBox[
+      {RGBColor[0.9490196078431372, 0.9490196078431372, 0.9490196078431372], 
+       Opacity[1], 
+       PolygonBox[{{{-3.366549999999999, 
+        64.99254517710673}, {-3.36347000000002, 
+        64.99254517710673}, {-3.36347000000002, 
+        64.9835074765273}, {-3.366549999999999, 
+        64.9835074765273}, {-3.366549999999999, 64.99254517710673}}}]},
+      Annotation[#, {"background", "background", None}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[{},
+      Annotation[#, {"poles", None, None}, "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9490196078431372, 0.9490196078431372, 0.9490196078431372], 
+       PolygonBox[{}]},
+      Annotation[#, {
+       "fill", "landuse_school_hospital_residential", "landuse"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.8627450980392157, 0.9019607843137255, 0.7215686274509804], 
+       Opacity[1], 
+       StyleBox[{PolygonBox[{}], 
+         PolygonBox[{{{-3.366549999999999, 
+          64.98797785637913}, {-3.36580753326416, 
+          64.98777329921722}, {-3.3649706840515137`, 
+          64.98938262462616}, {-3.3640050888061523`, 
+          64.98858869075775}, {-3.3647990226745605`, 
+          64.9877518415451}, {-3.36456298828125, 
+          64.98678624629974}, {-3.365464210510254, 
+          64.98592793941498}, {-3.3657217025756836`, 
+          64.98607814311981}, {-3.3663010597229004`, 
+          64.98599231243134}, {-3.366549999999999, 
+          64.98511144683545}, {-3.366549999999999, 64.98797785637913}}}]},
+        Antialiasing->False]},
+      Annotation[#, {"fill", "landcover_grass_wood", "landcover"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.6980392156862745, 0.8196078431372549, 1.], 
+       AbsoluteThickness[2.4811419901153466`], CapForm["Butt"], JoinForm[
+       "Miter"], 
+       LineBox[{{{-3.36347000000002, 64.99088744417189}, {-3.364037275314331, 
+        64.99060034751892}, {-3.3646488189697266`, 
+        64.99063789844513}, {-3.36506724357605, 
+        64.99075055122375}, {-3.3652764558792114`, 
+        64.99087393283844}, {-3.3656734228134155`, 
+        64.9912977218628}, {-3.3661025762557983`, 
+        64.99115824699402}, {-3.366515636444092, 
+        64.99136209487915}, {-3.366549999999999, 64.99180882110595}}}], 
+       LineBox[{}], LineBox[{}]},
+      Annotation[#, {"line", "waterway_other", "waterway"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.7725490196078432, 0.5529411764705883], 
+       AbsoluteThickness[6.643634586673753], Opacity[1], CapForm["Round"], 
+       JoinForm["Round"], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{{{-3.364632725715637, 64.99197900295258}, {-3.364487886428833,
+         64.99201655387878}, {-3.3639782667160034`, 
+        64.9920916557312}, {-3.3637475967407227`, 
+        64.99209702014923}, {-3.3635705709457397`, 
+        64.99204874038696}, {-3.36347000000002, 64.99209024585663}}}], 
+       LineBox[{{{-3.3662796020507812`, 
+        64.98414158821106}, {-3.365984559059143, 
+        64.98404502868652}, {-3.365914821624756, 
+        64.9840396642685}, {-3.365861177444458, 64.98401820659637}}}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}], LineBox[{}]},
+      Annotation[#, {"line", "road_servicetrack_casing", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.6980392156862745, 0.6980392156862745, 0.6980392156862745], 
+       AbsoluteThickness[4.408350805683833], Opacity[1], CapForm["Round"], 
+       JoinForm["Round"], 
+       LineBox[{{{-3.364938497543335, 64.99062716960907}, {-3.365008234977722,
+         64.99061107635498}, {-3.366549999999999, 64.99125347844759}}}], 
+       LineBox[{{{-3.366549999999999, 64.98810696007013}, {-3.365662693977356,
+         64.9880039691925}, {-3.364541530609131, 64.9893718957901}}}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}]},
+      Annotation[#, {"line", "path_casing", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.7372549019607844, 0.4588235294117647], 
+       AbsoluteThickness[6.643634586673753], Opacity[1], CapForm["Round"], 
+       JoinForm["Round"], 
+       LineBox[{{{-3.364938497543335, 
+         64.99062716960907}, {-3.3650779724121094`, 
+         64.99042332172394}, {-3.365158438682556, 
+         64.99020874500275}, {-3.3650779724121094`, 
+         64.98997807502747}, {-3.364541530609131, 
+         64.9893718957901}}, {{-3.3645200729370117`, 
+         64.9912816286087}, {-3.36481511592865, 
+         64.99081492424011}}, {{-3.36347000000002, 
+         64.98841923040217}, {-3.3634954690933228`, 
+         64.98843312263489}, {-3.3636456727981567`, 64.98844921588898}}}]},
+      Annotation[#, {"line", "road_minor_casing", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9019607843137255, 0.6470588235294118, 0.27058823529411763`],
+        AbsoluteThickness[9.352724812317504], Opacity[1], CapForm["Round"], 
+       JoinForm["Round"], 
+       LineBox[{{{-3.364337682723999, 
+         64.99076664447784}, {-3.3645200729370117`, 
+         64.9912816286087}, {-3.364632725715637, 
+         64.99197900295258}, {-3.36471438544941, 
+         64.99254517710673}}, {{-3.3647936582565308`, 
+         64.98607814311981}, {-3.364208936691284, 
+         64.98667895793915}, {-3.363913893699646, 
+         64.98718857765198}, {-3.3636993169784546`, 
+         64.98798251152039}, {-3.3636242151260376`, 
+         64.98866379261017}, {-3.363688588142395, 
+         64.98898029327393}, {-3.364235758781433, 
+         64.99050915241241}}, {{-3.366549999999999, 
+         64.98374790197565}, {-3.3655178546905518`, 
+         64.98526811599731}, {-3.3647936582565308`, 64.98607814311981}}}]},
+      Annotation[#, {"line", "road_motorway_casing_trunk", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9294117647058824, 0.8666666666666667, 0.7725490196078432], 
+       AbsoluteThickness[4.643634586673753], CapForm["Round"], JoinForm[
+       "Round"], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{{{-3.364632725715637, 64.99197900295258}, {-3.364487886428833,
+         64.99201655387878}, {-3.3639782667160034`, 
+        64.9920916557312}, {-3.3637475967407227`, 
+        64.99209702014923}, {-3.3635705709457397`, 
+        64.99204874038696}, {-3.36347000000002, 64.99209024585663}}}], 
+       LineBox[{{{-3.3662796020507812`, 
+        64.98414158821106}, {-3.365984559059143, 
+        64.98404502868652}, {-3.365914821624756, 
+        64.9840396642685}, {-3.365861177444458, 64.98401820659637}}}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}], LineBox[{}]},
+      Annotation[#, {"line", "road_servicetrack", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9490196078431372, 0.9490196078431372, 0.9490196078431372], 
+       AbsoluteThickness[1.6333320803468763`], CapForm["Round"], JoinForm[
+       "Round"], 
+       LineBox[{{{-3.364938497543335, 64.99062716960907}, {-3.365008234977722,
+         64.99061107635498}, {-3.366549999999999, 64.99125347844759}}}], 
+       LineBox[{{{-3.366549999999999, 64.98810696007013}, {-3.365662693977356,
+         64.9880039691925}, {-3.364541530609131, 64.9893718957901}}}], 
+       LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], LineBox[{}], 
+       LineBox[{}]},
+      Annotation[#, {"line", "path", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.8470588235294118, 0.7411764705882353], 
+       AbsoluteThickness[4.643634586673753], CapForm["Round"], JoinForm[
+       "Round"], 
+       LineBox[{{{-3.364938497543335, 
+         64.99062716960907}, {-3.3650779724121094`, 
+         64.99042332172394}, {-3.365158438682556, 
+         64.99020874500275}, {-3.3650779724121094`, 
+         64.98997807502747}, {-3.364541530609131, 
+         64.9893718957901}}, {{-3.3645200729370117`, 
+         64.9912816286087}, {-3.36481511592865, 
+         64.99081492424011}}, {{-3.36347000000002, 
+         64.98841923040217}, {-3.3634954690933228`, 
+         64.98843312263489}, {-3.3636456727981567`, 64.98844921588898}}}]},
+      Annotation[#, {"line", "road_minor", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9019607843137255, 0.8117647058823529, 0.6745098039215687], 
+       AbsoluteThickness[7.352724812317504], CapForm["Round"], JoinForm[
+       "Round"], 
+       LineBox[{{{-3.364337682723999, 
+         64.99076664447784}, {-3.3645200729370117`, 
+         64.9912816286087}, {-3.364632725715637, 
+         64.99197900295258}, {-3.36471438544941, 
+         64.99254517710673}}, {{-3.3647936582565308`, 
+         64.98607814311981}, {-3.364208936691284, 
+         64.98667895793915}, {-3.363913893699646, 
+         64.98718857765198}, {-3.3636993169784546`, 
+         64.98798251152039}, {-3.3636242151260376`, 
+         64.98866379261017}, {-3.363688588142395, 
+         64.98898029327393}, {-3.364235758781433, 
+         64.99050915241241}}, {{-3.366549999999999, 
+         64.98374790197565}, {-3.3655178546905518`, 
+         64.98526811599731}, {-3.3647936582565308`, 64.98607814311981}}}]},
+      Annotation[#, {"line", "road_motorway_trunk", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.7725490196078432, 0.5529411764705883], 
+       AbsoluteThickness[6.643634586673753], Opacity[1], CapForm["Butt"], 
+       JoinForm["Round"], LineBox[{}], LineBox[{}]},
+      Annotation[#, {
+       "line", "road_servicetrack_bridge_casing", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.7372549019607844, 0.4588235294117647], 
+       AbsoluteThickness[6.643634586673753], Opacity[1], CapForm["Butt"], 
+       JoinForm["Round"], 
+       LineBox[{{{-3.36481511592865, 64.99081492424011}, {-3.364938497543335, 
+        64.99062716960907}}}]},
+      Annotation[#, {"line", "road_minor_bridge_casing", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9019607843137255, 0.6470588235294118, 0.27058823529411763`],
+        AbsoluteThickness[9.352724812317504], Opacity[1], CapForm["Butt"], 
+       JoinForm["Round"], 
+       LineBox[{{{-3.364235758781433, 64.99050915241241}, {-3.364337682723999,
+         64.99076664447784}}}]},
+      Annotation[#, {
+       "line", "road_motorway_bridge_casing_trunk", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9294117647058824, 0.8666666666666667, 0.7725490196078432], 
+       AbsoluteThickness[4.643634586673753], CapForm["Butt"], JoinForm[
+       "Round"], LineBox[{}], LineBox[{}]},
+      Annotation[#, {"line", "road_servicetrack_bridge", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9215686274509803, 0.8470588235294118, 0.7411764705882353], 
+       AbsoluteThickness[4.643634586673753], CapForm["Butt"], JoinForm[
+       "Round"], 
+       LineBox[{{{-3.36481511592865, 64.99081492424011}, {-3.364938497543335, 
+        64.99062716960907}}}]},
+      Annotation[#, {"line", "road_minor_bridge", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.9019607843137255, 0.8117647058823529, 0.6745098039215687], 
+       AbsoluteThickness[7.352724812317504], CapForm["Butt"], JoinForm[
+       "Round"], 
+       LineBox[{{{-3.364235758781433, 64.99050915241241}, {-3.364337682723999,
+         64.99076664447784}}}]},
+      Annotation[#, {"line", "road_motorway_bridge_trunk", "transportation"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0.8549019607843137, 0.8549019607843137, 0.8549019607843137], 
+       Opacity[1.], EdgeForm[{RGBColor[
+       0.6666666666666666, 0.6666666666666666, 0.6666666666666666], Opacity[
+       1.]}], PolygonBox[{{{-3.363715410232544, 
+         64.99147474765778}, {-3.3639514446258545`, 
+         64.99144792556763}, {-3.3639997243881226`, 
+         64.99187707901001}, {-3.363763689994812, 
+         64.99190390110016}}, {{-3.3639782667160034`, 
+         64.99145865440369}, {-3.364208936691284, 
+         64.99143183231354}, {-3.3642518520355225`, 
+         64.9917858839035}, {-3.364015817642212, 
+         64.99180734157562}}, {{-3.3642250299453735`, 
+         64.99138355255127}, {-3.3643269538879395`, 
+         64.99136745929718}, {-3.3643805980682373`, 
+         64.99177515506744}, {-3.3642786741256714`, 
+         64.9917858839035}}, {{-3.363908529281616, 
+         64.99116897583008}, {-3.3640319108963013`, 
+         64.99115824699402}, {-3.3640480041503906`, 
+         64.99142110347748}, {-3.363919258117676, 
+         64.99143183231354}}, {{-3.3641445636749268`, 
+         64.99115824699402}, {-3.364289402961731, 
+         64.9911367893219}, {-3.3643215894699097`, 
+         64.99136209487915}, {-3.3641821146011353`, 
+         64.99138355255127}}, {{-3.364766836166382, 
+         64.99054670333862}, {-3.3648473024368286`, 
+         64.99027848243713}, {-3.365008234977722, 
+         64.9903267621994}, {-3.3649814128875732`, 
+         64.99042332172394}, {-3.3649009466171265`, 
+         64.99039649963379}, {-3.3648526668548584`, 
+         64.99057352542877}}, {{-3.364740014076233, 
+         64.98990297317505}, {-3.3648526668548584`, 
+         64.98985469341278}, {-3.364938497543335, 
+         64.99006927013397}, {-3.3648204803466797`, 
+         64.99011754989624}}, {{-3.3656734228134155`, 
+         64.98437762260437}, {-3.3657431602478027`, 
+         64.98428106307983}, {-3.3656948804855347`, 
+         64.98424887657166}, {-3.3658182621002197`, 
+         64.98407185077667}, {-3.3659523725509644`, 
+         64.98416304588318}, {-3.365759253501892, 
+         64.9844366312027}}, {{-3.3659470081329346`, 
+         64.98395919799805}, {-3.366011381149292, 
+         64.9838787317276}, {-3.3660918474197388`, 
+         64.98393774032593}, {-3.3660274744033813`, 64.9840235710144}}}]},
+      Annotation[#, {"fill", "building", "building"}, 
+       "WolframGeoGraphics"]& ], 
+     TagBox[
+      {RGBColor[0., 0., 0.], AbsoluteThickness[0.2], Opacity[0.2], 
+       AbsoluteDashing[{0.4, 0.6000000000000001}], CapForm["Butt"], JoinForm[
+       "Miter"], 
+       LineBox[{{{-3.366549999999999, 64.99110811542346}, {-3.36630642414093, 
+        64.99105095863342}, {-3.3657807111740112`, 
+        64.99110996723175}, {-3.3652228116989136`, 
+        64.9907237291336}, {-3.3643269538879395`, 
+        64.99055743217468}, {-3.363763689994812, 
+        64.99067544937134}, {-3.36347000000002, 64.99085124230729}}}]},
+      Annotation[#, {"line", "boundary_9", "boundary"}, 
+       "WolframGeoGraphics"]& ]},
+    Annotation[#, "GeoBackground", "WolframGeoGraphics"]& ], 
+   TagBox[
+    TagBox[
+     TooltipBox[
+      {Opacity[0], RectangleBox[Scaled[{0.8, 0}], Scaled[{1, 0.2}]]},
+      TagBox[
+       GridBox[{{
+          StyleBox["\"Geo data sources\"", Bold, StripOnInput -> False]}, {
+          
+          TemplateBox[{
+           "\"Wolfram Knowledgebase\"", "\" (\"", 
+            "\"https://www.wolfram.com/\"", "\")\""}, "RowDefault"]}, {
+          
+          TemplateBox[{
+           "\"\[Copyright] MapTiler\"", "\" (\"", 
+            "\"https://www.maptiler.com/copyright/\"", "\")\""}, 
+           "RowDefault"]}, {
+          
+          TemplateBox[{
+           "\"\[Copyright] OpenStreetMap contributors\"", "\" (\"", 
+            "\"https://www.openstreetmap.org/copyright\"", "\")\""}, 
+           "RowDefault"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+        DefaultBaseStyle -> "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]],
+     Annotation[#, 
+      Column[{
+        Style["Geo data sources", Bold], 
+        Row[{"Wolfram Knowledgebase", " (", "https://www.wolfram.com/", ")"}], 
+        Row[{
+         "\[Copyright] MapTiler", " (", "https://www.maptiler.com/copyright/",
+           ")"}], 
+        Row[{
+         "\[Copyright] OpenStreetMap contributors", " (", 
+          "https://www.openstreetmap.org/copyright", ")"}]}], "Tooltip"]& ],
+    Annotation[#, "Metadata", "WolframGeoGraphics"]& ], 
+   TagBox[{{
+      {LABColor[0.474447557664473, 0.6151431014236668, 0.5846884052203631], 
+       PointSize[Medium], Opacity[1], EdgeForm[{Opacity[0.4], Thickness[
+       Tiny]}], FaceForm[Opacity[0.5]], {}, 
+       {RGBColor[0.790588, 0.201176, 0.], Thickness[Large], Opacity[1], 
+        LineBox[{{{-3.3646000000000003`, 
+         64.99213434740649}, {-3.3644800000000004`, 
+         64.99137959344318}, {-3.3644100000000003`, 
+         64.99103652613029}, {-3.3640000000000003`, 
+         64.98981865064843}, {-3.3637300000000003`, 
+         64.98911538002022}, {-3.36363, 
+         64.98875517095114}, {-3.3636100000000004`, 
+         64.98841211640537}, {-3.3637100000000006`, 
+         64.98786323260337}, {-3.3637900000000003`, 
+         64.98753733486728}, {-3.3639700000000006`, 
+         64.9870227625608}, {-3.3641500000000004`, 
+         64.98669686870873}, {-3.3642800000000004`, 
+         64.98652534623362}, {-3.3648700000000002`, 
+         64.98590786877737}, {-3.36532, 
+         64.98539330836043}, {-3.3659600000000007`, 
+         64.98457001950263}, {-3.36641, 64.98391825597307}}}]}}, 
+      {LABColor[0.474447557664473, 0.6151431014236668, 0.5846884052203631], 
+       PointSize[Medium], Opacity[1], EdgeForm[{Opacity[0.4], Thickness[
+       Tiny]}], FaceForm[Opacity[0.5]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3646000000000003, 64.99213434740649},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3644800000000004, 64.99137959344318},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3644100000000003, 64.99103652613029},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3640000000000003, 64.98981865064843},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3637300000000003, 64.98911538002022},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.36363, 64.98875517095114}, 
+        Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3636100000000004, 64.98841211640537},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3637100000000006, 64.98786323260337},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3637900000000003, 64.98753733486728},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3639700000000006, 64.9870227625608},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3641500000000004, 64.98669686870873},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3642800000000004, 64.98652534623362},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3648700000000002, 64.98590786877737},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.36532, 64.98539330836043}, 
+        Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.3659600000000007, 64.98457001950263},
+         Automatic, Offset[7]], InsetBox[
+        GraphicsBox[
+         {RGBColor[0.790588, 0.201176, 0.], PointSize[Medium], Opacity[1], 
+          EdgeForm[None], DiskBox[{0, 0}]}], {-3.36641, 64.98391825597307}, 
+        Automatic, Offset[7]]}}, {}},
+    Annotation[#, "UserInput", "WolframGeoGraphics"]& ], 
+   TagBox[{},
+    Annotation[#, "GeoGridLines", "WolframGeoGraphics"]& ], 
+   TagBox[{},
+    Annotation[#, "GeoScaleBar", "WolframGeoGraphics"]& ], 
+   TagBox[{},
+    Annotation[#, "GeoLabels", "WolframGeoGraphics"]& ]},
+  CoordinatesToolOptions:>{
+   "DisplayFunction" -> (
+     GeoGraphics`GeoGridPositionDisplay[#, {
+      "Mercator", "Centering" -> 
+       GeoPosition[{54.33801500000001, -3.3650100000000096`}], 
+       "GridOrigin" -> {-3.3650100000000096`, 0}}, "ITRF00"]& ), 
+    "CopiedValueFunction" -> (
+     GeoGraphics`GeoGridPositionCopiedValue[#, {
+      "Mercator", "Centering" -> 
+       GeoPosition[{54.33801500000001, -3.3650100000000096`}], 
+       "GridOrigin" -> {-3.3650100000000096`, 0}}, "ITRF00"]& )},
+  DefaultBaseStyle->"GeoGraphics",
+  DisplayFunction->Identity,
+  Method->{"VectorMapRemoveLabels" -> True, "OriginalInput" -> HoldForm[
+      GeoGraphics[{
+        GeoStyling[], {
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {}, {
+          Directive[
+           Opacity[1], 
+           Thickness[Large], 
+           RGBColor[0.790588, 0.201176, 0.]], 
+          GeoPath[{
+            
+            GeoPosition[{
+             54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], 
+            
+            GeoPosition[{
+             54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], 
+            
+            GeoPosition[{
+             54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], 
+            
+            GeoPosition[{
+             54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], 
+            
+            GeoPosition[{
+             54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], 
+            
+            GeoPosition[{
+             54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], 
+            
+            GeoPosition[{
+             54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], 
+            
+            GeoPosition[{
+             54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], 
+            
+            GeoPosition[{
+             54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], 
+            
+            GeoPosition[{
+             54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], 
+            
+            GeoPosition[{
+             54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], 
+            
+            GeoPosition[{
+             54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], 
+            
+            GeoPosition[{
+             54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], 
+            
+            GeoPosition[{
+             54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], 
+            
+            GeoPosition[{
+             54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], 
+            
+            GeoPosition[{
+             54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}]}]}, 
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}], Automatic, 
+           Offset[7]]}}, {}}, {
+       GeoBackground -> GeoStyling["GeoPlotMap"], 
+        Method -> {"VectorMapRemoveLabels" -> True}}]], 
+    "BasicGeoRange" -> {{54.335620000000006`, 
+     54.34041000000001}, {-3.36641, -3.3636100000000195`}}, "OriginalInput" -> 
+    HoldForm[
+      GeoGraphics[{
+        GeoStyling[], {
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {}, {
+          Directive[
+           Opacity[1], 
+           Thickness[Large], 
+           RGBColor[0.790588, 0.201176, 0.]], 
+          GeoPath[{
+            
+            GeoPosition[{
+             54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], 
+            
+            GeoPosition[{
+             54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], 
+            
+            GeoPosition[{
+             54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], 
+            
+            GeoPosition[{
+             54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], 
+            
+            GeoPosition[{
+             54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], 
+            
+            GeoPosition[{
+             54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], 
+            
+            GeoPosition[{
+             54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], 
+            
+            GeoPosition[{
+             54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], 
+            
+            GeoPosition[{
+             54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], 
+            
+            GeoPosition[{
+             54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], 
+            
+            GeoPosition[{
+             54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], 
+            
+            GeoPosition[{
+             54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], 
+            
+            GeoPosition[{
+             54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], 
+            
+            GeoPosition[{
+             54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], 
+            GeoPosition[{
+             54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], 
+            
+            GeoPosition[{
+             54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}]}]}, 
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}], Automatic, 
+           Offset[7]]}}, {}}, {
+       GeoBackground -> GeoStyling["GeoPlotMap"], 
+        Method -> {"VectorMapRemoveLabels" -> True}}]], 
+    "BasicGeoRange" -> {{54.33538050000001, 
+     54.34064950000002}, {-3.3665499999999993`, -3.36347000000002}}, 
+    "OriginalInput" -> HoldForm[
+      GeoGraphics[{
+        GeoStyling[], {
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {}, {
+          Directive[
+           Opacity[1], 
+           Thickness[Large], 
+           RGBColor[0.790588, 0.201176, 0.]], 
+          GeoPath[{
+            
+            GeoPosition[{
+             54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], 
+            
+            GeoPosition[{
+             54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], 
+            
+            GeoPosition[{
+             54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], 
+            
+            GeoPosition[{
+             54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], 
+            
+            GeoPosition[{
+             54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], 
+            
+            GeoPosition[{
+             54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], 
+            
+            GeoPosition[{
+             54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], 
+            
+            GeoPosition[{
+             54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], 
+            
+            GeoPosition[{
+             54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], 
+            
+            GeoPosition[{
+             54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], 
+            
+            GeoPosition[{
+             54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], 
+            
+            GeoPosition[{
+             54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], 
+            
+            GeoPosition[{
+             54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], 
+            
+            GeoPosition[{
+             54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], 
+            
+            GeoPosition[{
+             54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], 
+            
+            GeoPosition[{
+             54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}]}]}, 
+         Directive[
+          Opacity[1], 
+          EdgeForm[
+           Directive[
+            Thickness[Tiny], 
+            Opacity[0.4]]], 
+          PointSize[Medium], 
+          FaceForm[{
+            Opacity[0.5], 
+            RGBColor[1., 0.607843, 0.]}], 
+          LABColor[
+          0.474447557664473, 0.6151431014236668, 0.5846884052203631]], {
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3404100000000056525`7.735122910858939, \
+-3.3646000000000002572`6.526933440590141}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3399700000000056525`7.434089398652744, \
+-3.3644800000000002572`6.225887955338333}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3397700000000056525`7.25799654115937, \
+-3.3644100000000002572`6.049787660434619}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3390600000000056525`7.1330521300497525, \
+-3.3640000000000002572`5.924795995797915}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3386500000000056524`7.03613884018322, \
+-3.3637300000000002572`5.827851124223841}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3384400000000056524`6.956955915735094, \
+-3.3636300000000002572`5.7486569668861405}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3382400000000056525`6.890007527621781, \
+-3.3636100000000002572`5.681707594951452}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3379200000000056524`6.832013023059538, \
+-3.3637100000000002572`5.6237285593406074}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3377300000000056524`6.780858982039203, \
+-3.3637900000000002572`5.572586365710339}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3374300000000056524`6.735099093720944, \
+-3.3639700000000002572`5.526852114090042}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3372400000000056524`6.693704889976065, \
+-3.3641500000000002572`5.485482666628753}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3371400000000056524`6.655915529828402, \
+-3.3642800000000002572`5.44771088774724}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3367800000000056524`6.621150546227257, \
+-3.3648700000000002573`5.413024937836147}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3364800000000056523`6.588963465056349, \
+-3.3653200000000002573`5.380898330839157}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3360000000000056523`6.558996405172159, \
+-3.3659600000000002574`5.3510176915970495}], Automatic, 
+           Offset[7]], 
+          Inset[
+           Graphics[{
+             Directive[
+              Opacity[1], 
+              RGBColor[0.790588, 0.201176, 0.], 
+              PointSize[Medium]], 
+             EdgeForm[], 
+             Disk[{0, 0}]}], 
+           
+           GeoPosition[{
+            54.3356200000000056523`6.530964644313371, \
+-3.3664100000000002574`5.323047025565578}], Automatic, 
+           Offset[7]]}}, {}}, {
+       GeoBackground -> GeoStyling["GeoPlotMap"], 
+        Method -> {"VectorMapRemoveLabels" -> True}}]], 
+    "BasicGeoRange" -> {{54.33538050000001, 
+     54.34064950000002}, {-3.3665499999999993`, -3.36347000000002}}, 
+    "GeoGraphicsOptions" -> {
+     GeoBackground -> GeoStyling["PlainNoLabels"], GeoCenter -> 
+      GeoPosition[{54.33801500000001, -3.3650100000000096`}], GeoGridLines -> 
+      None, GeoGridLinesStyle -> GrayLevel[0.4, 0.3], 
+      GeoGridRange -> {{-3.366549999999999, -3.36347000000002}, {
+       64.9835074765273, 64.99254517710673}}, GeoGridRangePadding -> None, 
+      GeoModel -> "ITRF00", GeoProjection -> "Mercator", 
+      GeoRange -> {{54.33538050000001, 
+       54.34064950000002}, {-3.3665499999999993`, -3.36347000000002}}, 
+      GeoRangePadding -> Full, GeoResolution -> Automatic, GeoScaleBar -> 
+      None, GeoServer -> {Automatic}, GeoZoomLevel -> 17.058194325002475`, 
+      MetaInformation -> <|"GeoMetaInformation" -> <|"Attribution" -> Row[{
+             Hyperlink["Wolfram Knowledgebase", "https://www.wolfram.com/"], 
+             ", ", 
+             Hyperlink[
+             "\[Copyright] MapTiler", "https://www.maptiler.com/copyright/"], 
+             ", ", 
+             Hyperlink[
+             "\[Copyright] OpenStreetMap contributors", 
+              "https://www.openstreetmap.org/copyright"]}], "AttributionType" -> 
+          "Tooltip", "Software" -> "Wolfram Language", 
+          "TileSources" -> {"Wolfram", "MapTiler", "OSM"}|>|>}},
+  PlotInteractivity:>True,
+  PlotRange->{{-3.366549999999999, -3.36347000000002}, {64.9835074765273, 
+   64.99254517710673}},
+  PlotRangeClipping->True,
+  PlotRangePadding->None]], "Output",
+ CellChangeTimes->{3.988997911059252*^9},
+ CellLabel->"Out[1]=",
+ CellID->39925001,ExpressionUUID->"b4ff5028-adad-5344-80d3-d3e41355ff22"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{575.4, 645.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "JosephBrennan/StravaLink"|>,
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"4cf94821-f759-fa46-ab9f-5c41566d2cec"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[72149, 1413, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"f7295c79-058e-1441-ad76-23ff031f4c63",
+   CellTags->"ExtendedExamples",
+   CellID->747651649]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 128135, 2880}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 109, 1, 72, "ObjectName",ExpressionUUID->"93460474-9724-df43-a07b-dd186e49251c",
+ CellID->82277495],
+Cell[688, 25, 496, 10, 76, "Usage",ExpressionUUID->"74813d11-2a0e-874c-aefd-8c5d15940b72",
+ CellID->635704156],
+Cell[1187, 37, 215, 2, 26, "Notes",ExpressionUUID->"d1806785-5cc3-274f-b291-674f028c670f",
+ CellID->126235661]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1439, 44, 457, 13, 38, "SeeAlsoSection",ExpressionUUID->"543cbc9f-62de-e24f-b4ab-ec5e39513f14",
+ CellID->44651223],
+Cell[1899, 59, 1945, 45, 21, "SeeAlso",ExpressionUUID->"65a9ecd1-0c8b-634a-b7b2-bd38dddcbe60",
+ CellID->38815242]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3881, 109, 117, 1, 37, "MoreAboutSection",ExpressionUUID->"7e00ac98-2d68-6a4a-a407-bdfdfd996d74",
+ CellID->368081560],
+Cell[4001, 112, 171, 2, 17, "MoreAbout",ExpressionUUID->"d6834dc4-767d-1546-8fda-df7d7263ba24",
+ CellID->57355534]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4209, 119, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"f4fac376-1fe1-4149-8a24-6ba9b868b3bc",
+ CellID->839174385],
+Cell[4684, 134, 593, 12, 17, "RelatedLinks",ExpressionUUID->"10136224-b38f-c045-b92f-a1bdad4d4fc4",
+ CellID->480661155]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5314, 151, 528, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"ab874fc1-3063-004e-abe3-da11fdf0b32c",
+ CellID->3295126],
+Cell[5845, 167, 184, 3, 45, "ExampleInitialization",ExpressionUUID->"0f9d35e6-9189-7c4e-9cfa-596d23bc1723",
+ CellID->302627474]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6066, 175, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"4c6faeaa-c5e8-7740-ac5e-bc6dae8d8de7",
+ CellID->416200089],
+Cell[6511, 189, 199, 3, 23, "ExampleText",ExpressionUUID->"1843bd27-55ed-1747-bc30-a2a8285aa1ad",
+ CellID->48617538],
+Cell[CellGroupData[{
+Cell[6735, 196, 1221, 23, 218, "Input",ExpressionUUID->"2a0dbddd-4bfd-154e-bbe8-4841dcd9c22f",
+ CellID->26346633],
+Cell[7959, 221, 64141, 1186, 463, "Output",ExpressionUUID->"52a2a375-d9c4-b242-9110-eaa175622519",
+ CellID->499919105]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72149, 1413, 487, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"f7295c79-058e-1441-ad76-23ff031f4c63",
+ CellTags->"ExtendedExamples",
+ CellID->747651649],
+Cell[CellGroupData[{
+Cell[72661, 1430, 239, 5, 32, "ExampleSection",ExpressionUUID->"d42d6c92-2175-9642-a638-e389225d23d8",
+ CellID->9863980],
+Cell[72903, 1437, 479, 13, 23, "ExampleText",ExpressionUUID->"82ebacbb-e129-524d-9978-35b9748160a3",
+ CellID->14714245],
+Cell[CellGroupData[{
+Cell[73407, 1454, 757, 20, 112, "Input",ExpressionUUID->"60b0f6a6-6e39-8744-93f2-83632886708f",
+ CellID->452440787],
+Cell[74167, 1476, 53415, 1386, 290, "Output",ExpressionUUID->"b4ff5028-adad-5344-80d3-d3e41355ff22",
+ CellID->39925001]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
