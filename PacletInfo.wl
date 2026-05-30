@@ -17,6 +17,9 @@ PacletObject[
         "Root" -> "Kernel",
         "Context" -> {"JosephBrennan`StravaLink`"},
         "Symbols" -> {
+          "JosephBrennan`StravaLink`AuthorizeStravaApplication",
+          "JosephBrennan`StravaLink`GenerateStravaAccessToken",
+          "JosephBrennan`StravaLink`RefreshStravaAccessToken",
           "JosephBrennan`StravaLink`StravaActivityData",
           "JosephBrennan`StravaLink`StravaAthleteData",
           "JosephBrennan`StravaLink`StravaAthleteStats",
