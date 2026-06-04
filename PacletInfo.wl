@@ -21,6 +21,7 @@ PacletObject[
           "JosephBrennan`StravaLink`GenerateStravaAccessToken",
           "JosephBrennan`StravaLink`RefreshStravaAccessToken",
           "JosephBrennan`StravaLink`StravaActivityData",
+		  "JosephBrennan`StravaLink`StravaActivityStream",
           "JosephBrennan`StravaLink`StravaAthleteData",
           "JosephBrennan`StravaLink`StravaAthleteStats",
           "JosephBrennan`StravaLink`StravaRoutes",
