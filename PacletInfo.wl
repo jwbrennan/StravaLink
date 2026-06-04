@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Joseph Brennan",
     "License" -> "MIT",
     "PublisherID" -> "JosephBrennan",
-    "Version" -> "1.3.0",
+    "Version" -> "1.4.1",
     "WolframVersion" -> "14.3+",
     "PrimaryContext" -> "JosephBrennan`StravaLink`",
     "DocumentationURL" -> "https://resources.wolframcloud.com/PacletRepository/resources",

@@ -91,7 +91,7 @@ URLExecute[
 	HTTPRequest[
 		URLBuild[
 			"https://www.strava.com/api/v3/activities/" <> ToString[id] <> "/streams",
-			{"keys" -> "time,distance,altitude"}
+			{"keys" -> StringRiffle[$ActivityStreamTypesStrava, ","]}
 		],
 		<|
 			"Headers" -> 
@@ -103,7 +103,7 @@ URLExecute[
 	"RawJSON"
 ];
 
-StravaActivityStream[id_Integer, key_String /; MemberQ[{"Time", "Distance", "Altitude"}, key]] :=
+StravaActivityStream[id_Integer, key_String /; MemberQ[$ActivityStreamTypesWolfram, key]] :=
 With[
 	{
 		data = 
@@ -111,7 +111,7 @@ With[
 			HTTPRequest[
 				URLBuild[
 					"https://www.strava.com/api/v3/activities/" <> ToString[id] <> "/streams",
-					{"keys" -> ToLowerCase[key]}
+					{"keys" -> activityStreamTypeMapping[key]}
 				],
 				<|
 					"Headers" -> 
@@ -123,19 +123,19 @@ With[
 			"RawJSON"
 		]
 	},
-	SelectFirst[data, #["type"] == ToLowerCase[key] &]
+	SelectFirst[data, #["type"] == activityStreamTypeMapping[key] &]
 ];
 
-StravaActivityStream[id_Integer, keys_List /; ContainsAll[{"Time", "Distance", "Altitude"}, keys]] :=
+StravaActivityStream[id_Integer, keys_List /; ContainsAll[$ActivityStreamTypesWolfram, keys]] :=
 With[
-	{lowerCaseKeys = Map[ToLowerCase, keys]},
+	{convertKeys = Lookup[activityStreamTypeMapping, keys]},
 	{
 		data =
 		URLExecute[
 			HTTPRequest[
 				URLBuild[
 					"https://www.strava.com/api/v3/activities/" <> ToString[id] <> "/streams",
-					{"keys" -> StringJoin[Riffle[lowerCaseKeys, ","]]}
+					{"keys" -> StringJoin[Riffle[convertKeys, ","]]}
 				],
 				<|
 					"Headers" -> 
@@ -147,7 +147,7 @@ With[
 			"RawJSON"
 		]
 	},
-	Select[data, MemberQ[lowerCaseKeys, #["type"]] &]
+	Select[data, MemberQ[convertKeys, #["type"]] &]
 ]
 
 
